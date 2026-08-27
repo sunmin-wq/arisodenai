@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="アリソデナイ研究室の開発事例『道案内さん』。写真・地図・現在地を使った短距離道案内を作成し、LINEやURLで共有できるWebサービスです。">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>道案内さん｜開発事例｜アリソデナイ研究室</title>
+  <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="lab-brand" href="./index.html" aria-label="アリソデナイ研究室 トップへ">
+      <span class="lab-mark" aria-hidden="true">A</span>
+      <span>
+        <strong>アリソデナイ研究室</strong>
+        <small>ARISODENAI LAB</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="ページ内ナビゲーション">
+      <a href="#about">概要</a>
+      <a href="#flow">使い方</a>
+      <a href="#features">機能</a>
+      <a href="#development">開発内容</a>
+      <a class="nav-cta" href="mailto:arisodenailab@gmail.com">開発相談</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">WORKS 01 / WEB APP・LINE MINI APP</p>
+        <h1>「この道で来てね」を、<br>写真でそのまま送れる。</h1>
+        <p class="hero-lead">道案内さんは、駅・駐車場・バス停などから目的地までの短い道順を、写真・地図・一言案内で作り、LINEやURLで共有できるサービスです。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://michiansan.com">実際のサービスを見る</a>
+          <a class="button secondary" href="#flow">使い方を見る</a>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>企画・開発</dt><dd>アリソデナイ研究室</dd></div>
+          <div><dt>形態</dt><dd>Webアプリ / LINE連携</dd></div>
+          <div><dt>対象</dt><dd>個人・大会・店舗・施設・自治体</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-label="道案内さんの画面イメージ">
+        <div class="phone phone-main">
+          <div class="phone-bar"><span>道案内さん</span><span>作る</span></div>
+          <div class="mock-map">
+            <span class="route-line"></span>
+            <span class="pin p1">1</span><span class="pin p2">2</span><span class="pin p3">3</span>
+            <span class="location-dot"></span>
+            <span class="map-chip">2 / 5</span>
+          </div>
+          <div class="mock-photo">
+            <span class="photo-icon">📷</span>
+            <span class="mock-arrow">↗</span>
+            <div class="photo-caption"><strong>この角を右へ</strong><small>赤い自動販売機が目印です</small></div>
+          </div>
+          <div class="mock-controls"><span>← 前へ</span><strong>次へ →</strong><span>共有</span></div>
+        </div>
+        <div class="share-card">
+          <span class="share-icon">LINE</span>
+          <div><strong>道案内を共有</strong><small>URLを開くだけ。アプリ不要。</small></div>
+        </div>
+        <div class="gps-card"><span>◎</span><div><strong>現在地を確認</strong><small>迷った地点から共有も可能</small></div></div>
+      </div>
+    </section>
+
+    <section class="problem section-shell" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">WHY</p>
+        <h2>地図だけでは、最後の数百メートルが分かりにくい。</h2>
+      </div>
+      <div class="problem-grid">
+        <article><span>01</span><h3>入口が分からない</h3><p>大きな施設、大会会場、山間部、臨時駐車場などは、地図上の目的地に着いてから迷うことがあります。</p></article>
+        <article><span>02</span><h3>説明を毎回送っている</h3><p>「この角を曲がって」「この建物の横です」と、同じ説明や写真を何度も個別に送る手間があります。</p></article>
+        <article><span>03</span><h3>受け取る側に負担をかけたくない</h3><p>専用アプリのインストールや会員登録なしで、送られた人がすぐ見られることを重視しました。</p></article>
+      </div>
+    </section>
+
+    <section class="solution-band">
+      <div class="section-shell solution-inner">
+        <div>
+          <p class="eyebrow light">SOLUTION</p>
+          <h2>知っている人が、写真で道を教える。</h2>
+        </div>
+        <p>Google Mapsの代わりではなく、地図で伝えにくい「最後の道順」を補うサービスとして設計。作成者が現地を歩きながら案内ポイントを登録し、受け取った人は写真を順番に見ながら進めます。</p>
+      </div>
+    </section>
+
+    <section class="flow section-shell" id="flow">
+      <div class="section-heading centered">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>作るのも、見るのもシンプル。</h2>
+        <p>「案内を作る人」と「案内を受け取る人」の両方が迷わない操作にしています。</p>
+      </div>
+
+      <div class="flow-track">
+        <article class="flow-step">
+          <span class="step-no">STEP 1</span>
+          <div class="mini-screen create-screen">
+            <strong>新しい道案内</strong>
+            <span class="input-line">大会第3駐車場 → 受付</span>
+            <span class="mini-button">案内を作り始める</span>
+          </div>
+          <h3>タイトルを付けて開始</h3>
+          <p>目的地や用途が分かる名前を付け、現地で案内作成を始めます。</p>
+        </article>
+
+        <article class="flow-step">
+          <span class="step-no">STEP 2</span>
+          <div class="mini-screen camera-screen">
+            <div class="camera-frame">📷<span>＋ 案内ポイント</span></div>
+            <div class="caption-strip">右へ曲がります ↗</div>
+          </div>
+          <h3>写真と一言を追加</h3>
+          <p>迷いやすい場所で写真を撮り、短い説明、矢印、丸、線、地点ピンなどを加えます。</p>
+        </article>
+
+        <article class="flow-step">
+          <span class="step-no">STEP 3</span>
+          <div class="mini-screen share-screen">
+            <strong>案内が完成しました 🎉</strong>
+            <span class="line-button">LINEで送る</span>
+            <span class="plain-button">URLをコピー</span>
+          </div>
+          <h3>LINE・URL・QRで共有</h3>
+          <p>相手に合わせてLINE、共有URL、QRコード、Web埋め込みなどから渡せます。</p>
+        </article>
+
+        <article class="flow-step">
+          <span class="step-no">STEP 4</span>
+          <div class="mini-screen viewer-screen">
+            <div class="viewer-map">1 → 2 → <strong>3</strong></div>
+            <div class="viewer-photo">📷 <span>この先を左へ</span></div>
+            <div class="viewer-buttons"><span>← 前へ</span><strong>次へ →</strong></div>
+          </div>
+          <h3>相手はURLを開くだけ</h3>
+          <p>ログインや専用アプリは不要。地図、写真、現在地を見ながら順番に進めます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="features section-shell" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">FEATURES</p>
+        <h2>短い道案内に必要な機能を、一つに。</h2>
+      </div>
+      <div class="feature-grid">
+        <article><span class="feature-icon">📍</span><h3>GPS案内ポイント</h3><p>現在地を使って、現地を歩きながら案内ポイントを登録できます。</p></article>
+        <article><span class="feature-icon">📷</span><h3>写真＋注釈</h3><p>写真に矢印、線、丸、テキストを重ね、見るべき場所を視覚的に伝えられます。</p></article>
+        <article><span class="feature-icon">🗺️</span><h3>複数の地図</h3><p>OpenStreetMap、国土地理院地図、航空写真などを用途に合わせて利用します。</p></article>
+        <article><span class="feature-icon">🔗</span><h3>短い共有URL</h3><p>推測されにくい短いルートIDで共有し、受け取る側は登録なしで閲覧できます。</p></article>
+        <article><span class="feature-icon">◎</span><h3>現在地共有</h3><p>「今ここにいます」を短時間だけ共有し、迷った地点から助けを求める使い方にも対応します。</p></article>
+        <article><span class="feature-icon">🛡️</span><h3>プライバシー配慮</h3><p>写真のぼかし、所有者管理、通報、レート制限など、公開サービスとしての安全性も設計しています。</p></article>
+      </div>
+    </section>
+
+    <section class="use-cases section-shell">
+      <div class="section-heading centered">
+        <p class="eyebrow">USE CASES</p>
+        <h2>「場所は合っているのに迷う」を減らす。</h2>
+      </div>
+      <div class="case-grid">
+        <article><span>🏁</span><h3>スポーツ大会・イベント</h3><p>臨時駐車場から受付、会場内の集合場所、選手導線など。</p></article>
+        <article><span>🏥</span><h3>病院・施設・事業所</h3><p>正面入口とは異なる搬入口、検査受付、面談場所など。</p></article>
+        <article><span>🏡</span><h3>店舗・宿泊・個人宅</h3><p>細い路地、分かりにくい入口、指定駐車場への案内など。</p></article>
+        <article><span>🌲</span><h3>観光・山間部・地域案内</h3><p>地図だけでは伝えにくい分岐、遊歩道、地域行事の集合場所など。</p></article>
+      </div>
+    </section>
+
+    <section class="development section-shell" id="development">
+      <div class="development-copy">
+        <p class="eyebrow">DEVELOPMENT</p>
+        <h2>アイデア整理から、実際に使えるサービスまで。</h2>
+        <p>「こんなものがあれば便利」という着想から、利用シーン、画面構成、データ設計、認証、共有、セキュリティ、料金設計までを一つずつ具体化して実装しています。</p>
+        <div class="scope-tags" aria-label="対応領域">
+          <span>企画・要件整理</span><span>UI / UX設計</span><span>Webアプリ実装</span><span>位置情報</span><span>写真処理</span><span>認証・DB</span><span>LINE連携</span><span>セキュリティ</span><span>公開・運用設計</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <p class="tech-title">TECHNOLOGY</p>
+        <ul>
+          <li><strong>Frontend</strong><span>HTML / CSS / JavaScript</span></li>
+          <li><strong>Map</strong><span>Leaflet / OpenStreetMap / 国土地理院</span></li>
+          <li><strong>Backend</strong><span>Supabase Auth / Database</span></li>
+          <li><strong>Storage</strong><span>Vercel Blob</span></li>
+          <li><strong>Platform</strong><span>Vercel / LINE LIFF・Mini App</span></li>
+          <li><strong>Share</strong><span>URL / LINE / QR / Web Embed</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="value section-shell">
+      <div class="section-heading centered">
+        <p class="eyebrow">WHAT THIS PROJECT SHOWS</p>
+        <h2>「作って終わり」ではなく、使われるところまで考える。</h2>
+      </div>
+      <div class="value-grid">
+        <article><strong>01</strong><h3>課題を機能に翻訳</h3><p>「道を説明しづらい」という曖昧な困りごとを、写真・GPS・共有という具体的な機能に落とし込みます。</p></article>
+        <article><strong>02</strong><h3>利用者側の手間を減らす</h3><p>受け取る人にアプリインストールを求めず、URLを開くだけで使える体験を優先しています。</p></article>
+        <article><strong>03</strong><h3>運用と安全性も含めて設計</h3><p>アカウント、所有者管理、保存期間、公開停止、通報、不正利用対策まで、サービス運営を想定します。</p></article>
+      </div>
+    </section>
+
+    <section class="contact-band">
+      <div class="section-shell contact-inner">
+        <div>
+          <p class="eyebrow light">CONTACT</p>
+          <h2>「こんなの、ありそうでない」を<br>一緒に形にします。</h2>
+          <p>Webサービス、スマートフォン向けアプリ、位置情報・写真・クラウドを使った業務ツールなど、アイデア段階からご相談いただけます。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button white" href="mailto:arisodenailab@gmail.com">開発について相談する</a>
+          <a class="email-link" href="mailto:arisodenailab@gmail.com">arisodenailab@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div><strong>アリソデナイ研究室</strong><small>人の生活をもっと便利に。「あったらいいな」を形にする。</small></div>
+    <p>© 2026 ARISODENAI LAB</p>
+  </footer>
+</body>
+</html>
