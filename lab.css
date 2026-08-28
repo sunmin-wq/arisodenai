@@ -1,11 +1,11 @@
 @import url("./lab-base.css");
 
-/* Official Arisodenai wordmark — selected logo 04 */
+/* Official Arisodenai wordmark — selected logo 04 (vector) */
 .brand{gap:0;min-width:184px;flex-shrink:0}
 .brand>.brand-mark,.brand>.brand-copy{display:none}
-.brand::before{content:"";display:block;width:180px;height:31px;background:url("./assets/arisodenai-logo-04.png") left center/contain no-repeat}
+.brand::before{content:"";display:block;width:180px;height:41px;background:url("./assets/arisodenai-logo-04.svg") left center/contain no-repeat}
 
 @media(max-width:640px){
   .brand{min-width:145px}
-  .brand::before{width:145px;height:25px}
+  .brand::before{width:145px;height:33px}
 }
