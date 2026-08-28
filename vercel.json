@@ -4,6 +4,36 @@
       "source": "/favicon.ico",
       "destination": "/favicon.svg",
       "permanent": true
+    },
+    {
+      "source": "/go/lancers",
+      "destination": "/?utm_source=lancers&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/go/crowdworks",
+      "destination": "/?utm_source=crowdworks&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/go/coconala",
+      "destination": "/?utm_source=coconala&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/go/lancers/michiansan",
+      "destination": "/portfolio.html?utm_source=lancers&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/go/crowdworks/michiansan",
+      "destination": "/portfolio.html?utm_source=crowdworks&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
+    },
+    {
+      "source": "/go/coconala/michiansan",
+      "destination": "/portfolio.html?utm_source=coconala&utm_medium=profile&utm_campaign=freelance_portfolio",
+      "permanent": false
     }
   ]
 }
