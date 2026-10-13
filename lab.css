@@ -10,6 +10,10 @@
   .brand::before{width:145px;height:33px}
 }
 
+/* WORKS 01 の端末枠に、道案内さんの実際のトップ画面を入れる。
+   枠（.feature-phone のベゼル・角丸・影）は既存のまま使う。 */
+.feature-phone-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+
 /* 開発事例カード：絵文字ではなく実際のアプリアイコンを置く */
 .work-card-visual.notice{background:linear-gradient(145deg,#f4e7e1,#e0c0b3)}
 .work-icon{width:88px;height:88px;border-radius:20px;object-fit:cover;box-shadow:0 10px 24px rgba(23,33,29,.18);background:#fff}
