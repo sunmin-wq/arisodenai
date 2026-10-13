@@ -46,3 +46,10 @@
   /* 362px幅では30pxでも「こんなアプリが欲しい」が2pxほど溢れる */
   .contact-inner h2{font-size:27px}
 }
+
+/* 事例アイコンから各サービスへ。押せることが分かるよう軽く反応させる。 */
+.work-icon-link{display:block;line-height:0;border-radius:20px}
+.work-icon{transition:transform .18s ease, box-shadow .18s ease}
+.work-icon-link:hover .work-icon,.work-icon-link:focus-visible .work-icon{transform:translateY(-3px);box-shadow:0 16px 30px rgba(23,33,29,.26)}
+.work-icon-link:focus-visible{outline:3px solid #17211d;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.work-icon{transition:none}.work-icon-link:hover .work-icon{transform:none}}
