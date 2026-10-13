@@ -35,3 +35,6 @@
 @media(max-width:640px){
   .flow-step .mini-screen.flow-shot{max-width:290px}
 }
+
+/* ヒーローの端末枠に実際のトップ画面を入れる。枠（ベゼル・角丸・影）は既存のまま。 */
+.phone-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
