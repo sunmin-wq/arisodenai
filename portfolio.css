@@ -9,3 +9,14 @@
   .lab-brand{min-width:145px}
   .lab-brand::before{width:145px;height:33px}
 }
+
+/* Real product screenshots (michiansan) — additive section, see #screenshots */
+.real-screens{padding-block:60px 80px}
+.real-screens-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:850px;margin:35px auto 0}
+.real-screens-grid figure{margin:0;padding:16px;border-radius:22px;background:#f5f7f4;border:1px solid #dfe7e2}
+.real-screens-grid img{display:block;width:100%;height:auto;max-height:590px;object-fit:contain;border-radius:14px}
+.real-screens-grid figcaption{padding:14px 5px 3px;line-height:1.7;font-size:.94rem}
+.real-screens-grid figcaption strong{display:block;color:#17634c}
+@media(max-width:600px){
+  .real-screens-grid{grid-template-columns:1fr;max-width:390px}
+}
