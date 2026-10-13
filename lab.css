@@ -9,3 +9,7 @@
   .brand{min-width:145px}
   .brand::before{width:145px;height:33px}
 }
+
+/* WORKS 01 の端末枠に、道案内さんの実際のトップ画面を入れる。
+   枠（.feature-phone のベゼル・角丸・影）は既存のまま使う。 */
+.feature-phone-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
