@@ -20,3 +20,18 @@
 @media(max-width:600px){
   .real-screens-grid{grid-template-columns:1fr;max-width:390px}
 }
+
+/* Flow steps now show real product screens instead of the mock markup.
+   .mini-screen keeps the existing card frame; only the inner spacing changes. */
+.flow-step .mini-screen.flow-shot{min-height:0;gap:0;padding:10px}
+.flow-step .flow-shot img{display:block;width:100%;height:auto;border-radius:16px;
+  /* 元画像の幅が1083〜1088pxと揃っていないため、比率を固定しないと
+     同じ行でも高さが数px変わり、下の見出しがずれる。 */
+  aspect-ratio:1086/2000;object-fit:contain}
+@media(max-width:980px){
+  /* 2列になると1枚が大きくなりすぎるので、端末くらいの幅で中央に置く */
+  .flow-step .mini-screen.flow-shot{max-width:320px;margin-inline:auto}
+}
+@media(max-width:640px){
+  .flow-step .mini-screen.flow-shot{max-width:290px}
+}
