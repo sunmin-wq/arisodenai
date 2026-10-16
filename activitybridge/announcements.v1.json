@@ -32,7 +32,9 @@
       "kind": "platform",
       "route": "healthkit",
       "status": "limited",
-      "platforms": ["ios"],
+      "platforms": [
+        "ios"
+      ],
       "nameJa": "iPhone(Apple ヘルスケア)",
       "nameEn": "iPhone (Apple Health)",
       "detailJa": "ヘルスケアに保存されたワークアウトの読み取りを確認済みです。Google ドライブへの保存は、テスト用の合成データのみで確認しています。",
@@ -45,12 +47,29 @@
       "kind": "platform",
       "route": "health_connect",
       "status": "limited",
-      "platforms": ["android"],
+      "platforms": [
+        "android"
+      ],
       "nameJa": "Android(Health Connect)",
       "nameEn": "Android (Health Connect)",
-      "detailJa": "一部の動作のみ確認しています。実際のワークアウトでの確認は未完了です。",
-      "detailEn": "Only part of the behavior has been checked. Checks with real workouts are not complete.",
-      "verifiedWith": "SHARP 704SH",
+      "detailJa": "Android 14 のエミュレーターで、Health Connect の利用可否の判定、権限画面(読み取り 4 項目)、許可・拒否・取り消し、記録がない場合の表示を確認しました。実際のワークアウトの読み取りは未確認です。Health Connect が使えない Android 8 などの端末では、ワークアウトを読み取れません。",
+      "detailEn": "On an Android 14 emulator, the app was checked for Health Connect availability detection, the permission screen (4 read items), grant / deny / revoke, and the empty-result display. Reading real workouts has not been verified. Devices without Health Connect, such as Android 8, cannot read workouts.",
+      "verifiedWith": "Android 14 emulator",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "android-drive-sync",
+      "kind": "platform",
+      "route": "google_drive",
+      "status": "limited",
+      "platforms": [
+        "android"
+      ],
+      "nameJa": "Android(Google ドライブへの保存)",
+      "nameEn": "Android (saving to Google Drive)",
+      "detailJa": "Android 8 の実機で、Google サインインとテスト用の合成データの保存、既存ファイルの再利用(重複なし)を確認しました。請求設定の変更後の再確認は未完了です。実際の運動データでの保存は行っていません。",
+      "detailEn": "On an Android 8 device, Google sign-in, saving synthetic test data and reusing existing files (no duplicates) were confirmed. A re-check after the billing change is not done yet. Saving real workout data has not been done.",
+      "verifiedWith": "Android 8 device",
       "verifiedAt": "2026-10-16T00:00:00Z"
     },
     {
