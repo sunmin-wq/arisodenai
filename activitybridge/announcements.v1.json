@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-16T00:00:00Z",
+  "announcements": [
+    {
+      "id": "2026-10-status-initial",
+      "status": "published",
+      "publishedAt": "2026-10-16T00:00:00Z",
+      "category": "compatibility",
+      "severity": "normal",
+      "titleJa": "現在の対応状況について",
+      "titleEn": "Current support status",
+      "bodyJa": "ActivityBridge は現在テスト段階です。実際の運動データの Google ドライブへの保存は、まだ有効になっていません。対応状況は「対応状況」画面で確認できます。「確認済み」は実機で動作を確認した範囲のみを指します。",
+      "bodyEn": "ActivityBridge is currently in testing. Saving real workout data to Google Drive is not enabled yet. See the support status screen for details. \"Verified\" only covers what has been checked on real devices.",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "2026-10-racelife-future",
+      "status": "published",
+      "publishedAt": "2026-10-16T00:00:00Z",
+      "category": "racelife",
+      "severity": "normal",
+      "titleJa": "RaceLife との連携について(将来の予定)",
+      "titleEn": "About RaceLife integration (future plans)",
+      "bodyJa": "将来、RaceLife との連携を検討しています。現時点では連携は行っておらず、RaceLife のアカウントやデータは使用しません。連携を開始する場合は、事前にこのお知らせでご案内します。",
+      "bodyEn": "We are considering integration with RaceLife in the future. There is no integration today, and no RaceLife account or data is used. If it begins, it will be announced here beforehand."
+    }
+  ],
+  "supportMatrix": [
+    {
+      "id": "iphone-healthkit",
+      "kind": "platform",
+      "route": "healthkit",
+      "status": "limited",
+      "platforms": ["ios"],
+      "nameJa": "iPhone(Apple ヘルスケア)",
+      "nameEn": "iPhone (Apple Health)",
+      "detailJa": "ヘルスケアに保存されたワークアウトの読み取りを確認済みです。Google ドライブへの保存は、テスト用の合成データのみで確認しています。",
+      "detailEn": "Reading workouts stored in Apple Health is confirmed. Saving to Google Drive has been checked with synthetic test data only.",
+      "verifiedWith": "iPhone 17 / iOS 26",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "android-health-connect",
+      "kind": "platform",
+      "route": "health_connect",
+      "status": "limited",
+      "platforms": ["android"],
+      "nameJa": "Android(Health Connect)",
+      "nameEn": "Android (Health Connect)",
+      "detailJa": "一部の動作のみ確認しています。実際のワークアウトでの確認は未完了です。",
+      "detailEn": "Only part of the behavior has been checked. Checks with real workouts are not complete.",
+      "verifiedWith": "SHARP 704SH",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "chatgpt-via-drive",
+      "kind": "ai_service",
+      "route": "google_drive",
+      "status": "limited",
+      "nameJa": "ChatGPT(Google ドライブ経由)",
+      "nameEn": "ChatGPT (via Google Drive)",
+      "detailJa": "テスト用の合成データのファイルを読み取れることを確認しました。実際の運動データでの確認は行っていません。",
+      "detailEn": "Reading synthetic test data files has been confirmed. It has not been checked with real workout data.",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "claude-via-drive",
+      "kind": "ai_service",
+      "route": "google_drive",
+      "status": "limited",
+      "nameJa": "Claude(Google ドライブ経由)",
+      "nameEn": "Claude (via Google Drive)",
+      "detailJa": "テスト用の合成データのファイルを読み取れることを確認しました。実際の運動データでの確認は行っていません。",
+      "detailEn": "Reading synthetic test data files has been confirmed. It has not been checked with real workout data.",
+      "verifiedAt": "2026-10-16T00:00:00Z"
+    },
+    {
+      "id": "wearables-via-health-apps",
+      "kind": "wearable",
+      "route": "healthkit",
+      "status": "unverified",
+      "nameJa": "各社ウェアラブル(ヘルスケア / Health Connect に同期されたデータ)",
+      "nameEn": "Wearables (data synced into Apple Health / Health Connect)",
+      "detailJa": "メーカーとの直接連携は行いません。ヘルスケアや Health Connect に同期されたデータのみが対象で、機種ごとの動作は未検証です。",
+      "detailEn": "There is no direct manufacturer integration. Only data synced into Apple Health or Health Connect is read, and individual models are unverified."
+    }
+  ]
+}
