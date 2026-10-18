@@ -10,8 +10,8 @@
       "severity": "normal",
       "titleJa": "現在の対応状況について",
       "titleEn": "Current support status",
-      "bodyJa": "ActivityBridge は現在テスト段階です。実際の運動データの Google ドライブへの保存は、まだ有効になっていません。対応状況は「対応状況」画面で確認できます。「確認済み」は実機で動作を確認した範囲のみを指します。",
-      "bodyEn": "ActivityBridge is currently in testing. Saving real workout data to Google Drive is not enabled yet. See the support status screen for details. \"Verified\" only covers what has been checked on real devices.",
+      "bodyJa": "ActiRelay は現在テスト段階です。実際の運動データの Google ドライブへの保存は、まだ有効になっていません。対応状況は「対応状況」画面で確認できます。「確認済み」は実機で動作を確認した範囲のみを指します。",
+      "bodyEn": "ActiRelay is currently in testing. Saving real workout data to Google Drive is not enabled yet. See the support status screen for details. \"Verified\" only covers what has been checked on real devices.",
       "verifiedAt": "2026-10-16T00:00:00Z"
     },
     {
